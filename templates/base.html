@@ -10,15 +10,17 @@
     <nav>
         <ul>
             <li><a href="{% url 'AppAndrea:AppAndrea' %}">App Andrea</a></li>
-            <li><a href="{% url 'AppAndrea:AppAndrea2' %}"">App Andrea2</a></li>
-            <li><a href="{% url 'AppValeria:AppValeria1' %}"">App Valeria</a></li>
-            <li><a href="{% url 'AppValeria:AppValeria2' %}"">App Valeria 2</a></li>
+            <li><a href="{% url 'AppAndrea:AppAndrea2' %}""App Andrea2</a></li>
+            <li><a href="{% url 'AppValeria:AppValeria1' %}">App Valeria</a></li>
+            <li><a href="{% url 'AppValeria:AppValeria2' %}">App Valeria 2</a></li>
         </ul>
     </nav>
 
     <main>
+        {% block content %}
         <h1>Bienvenido a mi proyecto</h1>
         <p> Proyecto para evaluación la unidad 1 de back end</p>
+        {% endblock %}
     </main>
 
 </body>
