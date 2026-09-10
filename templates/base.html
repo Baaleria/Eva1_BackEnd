@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Inicio</title>
+    <title>{% block title %}Mi Página de Inicio{% endblock %}</title>
 </head>
 <body>
 
     <nav>
         <ul>
             <li><a href="{% url 'AppAndrea:AppAndrea' %}">App Andrea</a></li>
-            <li><a href="{% url 'AppAndrea:AppAndrea2' %}""App Andrea2</a></li>
+            <li><a href="{% url 'AppAndrea:AppAndrea2' %}">App Andrea 2</a></li>
             <li><a href="{% url 'AppValeria:AppValeria1' %}">App Valeria</a></li>
             <li><a href="{% url 'AppValeria:AppValeria2' %}">App Valeria 2</a></li>
         </ul>
@@ -18,8 +18,6 @@
 
     <main>
         {% block content %}
-        <h1>Bienvenido a mi proyecto</h1>
-        <p> Proyecto para evaluación la unidad 1 de back end</p>
         {% endblock %}
     </main>
 

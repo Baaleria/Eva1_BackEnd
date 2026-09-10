@@ -5,5 +5,5 @@ app_name = 'AppValeria'
 
 urlpatterns = [
     path('va1/', views.vista_AppValeria, name ='AppValeria1'),
-    path('va1/', views.vista_AppValeria, name ='AppValeria2')
+    path('va2/', views.vista_AppValeria2, name ='AppValeria2')
 ]
